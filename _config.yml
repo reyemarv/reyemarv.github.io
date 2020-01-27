@@ -1,11 +1,11 @@
 # Site settings
 author: Marvin Reyes
-title: 
+title: A Journey's Pilot
 header-img: img/home-bg.png
 email: reyemarv@gmail.com
 copyright_name: Marvin Reyes
 description: > # this means to ignore newlines until "baseurl:"
-  
+  The beginnings and path of something new
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  reyemarv
