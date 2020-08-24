@@ -1,0 +1,21 @@
+---
+layout: post
+title:      "Sinatra Project"
+date:       2020-08-24 15:08:43 +0000
+permalink:  sinatra_project
+---
+
+
+Well, next project here we are. After going through out CLI projects, I have to say, theres a bit more easiness in the flow of things. Not to say that the project was easy, because not all of it was, but when it came to the initial set up, things went much smoother this round. Anyways, so for this round of projecs we were to build an app with Sinatra, Activerecored, sqlit3, and with CRUD functionality. 
+
+Now Sinatra is what will help us build out web app, while Activrecord is what will make our lives so much easier in communicating with out database. As I mentioned before, we will need our app to have CRUD functionality. That is we should be able to create, read, update/edit, and delete. To be honest, one of the things that made the set up much easier was the corneal gem. Legend has it that this was created by a former Flatiron Student, just for this very purpose. To spare us from the headaches of setting up from scratch. From there we just take it in stages. 
+
+My project was based on a familiar database from my current work. It is essentially an inventory tracker. This app is for dealerships and keeping track of their inventory. Dealers call this a "floorplan", hence the name of Auto Floorplan for my project. This will allow a new user to sign up and log in after registering. From there, this user will have the ability to add new inventory to his floorplan. This inventory will have the information of year, make, model, color, and amount. The user can update/edit or delete the listed inventory too. However, I didn't want any user to have access to other's inventory list. in this situation, rather than having the edit button available on any unit, I preferred, that the user could only see his/her own floorplan. So in a sense, each user has their own profile page listing their own additions. 
+
+when you first launch the app via browser, you'll land on the welcome page. From here you will have to sign up or log in. Once in, you will be at your floorplans page, with your user name at the top and list of current inventory that's already been added by you. From here you can add new to create a new entry which will take you to a form to fill out. Once completed, this will take you back to your floorplan screen showing the updated inventory. This will also include a link to view more details of your unit. In this page, you will also have the ability to edit or delete the entry. Once you're done with what you need, you can log out. 
+
+I went through stages on this trying to figure out the best way to go about it. I created my datebases using "rake db:create_migration" to build 2 table, which would include my users and the inventory added. From there, I had 2 models which would be the same, User and Inventory. From here it was taking the steps to figure out where I wanted routes set. Initially I had only the layout and welcome (which were provided by corneal). I added my floorplan folder to include inventory.erb (index for others). Edit was for edit forms, new for add new forms,your signup and logout. I really didn't want to add anymore, but found that I was having trouble with my routes, which was fixed by adding my final view of show. The other struggles that I had was having my edit and delete work. My forms were set, but getting there was the issue. My links kept taking me to locations I didn't want or refreshing the page. Debugging isn't always fun, and in this case, spent quite some time figuring it out and making changes to sinatra's liking. But we made it through, if anything, I suggest taking it in blocks and going piece by piece with testing. I still have a habit of knowing what I want to do and building too much only to later have to debug and keep going back and forth trying to figure out where I went wrong and whats working. 
+
+This was challenging one, but def one of my favorites. It feels awesome to see a web app in front of you fully working. Just to think about where I started. It may not look all nice and shiny, but that can all be updated. What matters is seeing something work. I'm proud of this and looking forward to improving it as it goes. Already have another idea in mind for a personal project! 
+
+
